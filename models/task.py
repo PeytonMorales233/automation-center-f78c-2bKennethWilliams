@@ -22,7 +22,7 @@ class Task(Base):
     )
     is_active: Mapped[bool] = mapped_column(Boolean, default=True)
 
-    # Indexes for common query patterns
+    # Indexes for common query patterns minor comment refresh
     __table_args__ = (
         Index("ix_tasks_status_active", "status", "is_active"),
         Index("ix_tasks_title_trgm", "title"),  # placeholder for pg_trgm; ignored by SQLite
