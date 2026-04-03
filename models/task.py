@@ -31,3 +31,4 @@ class Task(Base):
 
     def __repr__(self) -> str:
         return f"<Task(id={self.id}, title='{self.title[:30]}...', status='{self.status}')>"
+# minor comment refresh
