@@ -11,7 +11,7 @@ from api.v1 import tasks, settings as settings_api, health
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup
+    # Startup minor comment refresh
     try:
         await init_db()
     except Exception as e:
