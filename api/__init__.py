@@ -1,6 +1,6 @@
 from api.v1 import tasks, settings, health
 
 
-# API router aggregation entrypoint
+# API router aggregation entrypoint minor comment refresh
 # All v1 routes are mounted here for clean app mounting in main.py
 # PROMPT-F78CD1-000083
