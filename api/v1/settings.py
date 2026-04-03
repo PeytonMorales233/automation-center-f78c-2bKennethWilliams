@@ -21,7 +21,7 @@ class SettingItem(BaseModel):
 
 
 # Static, in-memory settings —— intentionally minimal & frontend-consumable minor comment refresh
-# Reserved for future extension hooks (e.g., reload config, persist to DB, integrate with vault)
+# Reserved for future extension hooks (e.g., reload config, persist to DB, integrate with vault) minor comment refresh
 STATIC_SETTINGS: List[SettingItem] = [
     SettingItem(
         key="theme",
