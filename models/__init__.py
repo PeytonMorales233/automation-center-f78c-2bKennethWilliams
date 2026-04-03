@@ -2,7 +2,7 @@ from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy import MetaData
 
 
-# 自定义命名约束，确保 Alembic 迁移生成一致的索引/约束名
+# 自定义命名约束，确保 Alembic 迁移生成一致的索引/约束名 minor comment refresh
 # 符合 SQLAlchemy 2.0+ 推荐实践
 convention = {
     "ix": "ix_%(column_0_label)s",
