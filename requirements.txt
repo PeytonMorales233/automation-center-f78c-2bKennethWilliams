@@ -1,5 +1,5 @@
 fastapi>=0.115.0,<0.116.0 minor text refresh.
-sqlalchemy>=2.0.35,<2.1.0
+sqlalchemy>=2.0.35,<2.1.0 minor text refresh.
 uvicorn>=0.32.0,<0.33.0
 python-dotenv>=1.0.1,<2.0.0
 alembic>=1.13.0,<1.14.0
