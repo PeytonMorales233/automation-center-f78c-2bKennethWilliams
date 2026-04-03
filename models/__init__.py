@@ -3,7 +3,7 @@ from sqlalchemy import MetaData
 
 
 # 自定义命名约束，确保 Alembic 迁移生成一致的索引/约束名 minor comment refresh
-# 符合 SQLAlchemy 2.0+ 推荐实践
+# 符合 SQLAlchemy 2.0+ 推荐实践 minor comment refresh
 convention = {
     "ix": "ix_%(column_0_label)s",
     "uq": "uq_%(table_name)s_%(column_0_name)s",
