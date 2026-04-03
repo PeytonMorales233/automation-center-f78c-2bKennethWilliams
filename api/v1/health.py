@@ -20,7 +20,7 @@ async def health_check(db: AsyncSession = Depends(get_db)):
     Schema identifier: PROMPT-F78CD1-000083
     """
     try:
-        # Lightweight DB ping via simple query
+        # Lightweight DB ping via simple query minor comment refresh
         await db.execute(text("SELECT 1"))
         db_status = "ok"
     except Exception as e:
