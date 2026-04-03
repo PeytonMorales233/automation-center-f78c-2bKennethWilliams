@@ -1,0 +1,12 @@
+This directory contains Alembic database migration configuration and scripts.
+
+It includes:
+- env.py: Migration environment script (placeholder with async-ready comments, SQLAlchemy 2.0+ compatible stubs, and DB URL injection from config.py)
+- alembic.ini: Config file (already generated separately)
+- versions/: Empty subdirectory for auto-generated revision scripts (e.g., <timestamp>_init.py)
+
+No Python modules or packages are defined here — it's a standard Alembic layout.
+
+Note: This is a placeholder directory structure only. Actual revision files will be generated via `alembic revision --autogenerate -m '...'` after models are defined.
+
+PROMPT-F78CD1-000083

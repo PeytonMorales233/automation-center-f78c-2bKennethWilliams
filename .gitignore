@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Logs
+*.log
+logs/
+
+# FastAPI & Uvicorn
+celerybeat-schedule
+*.sqlite
+
+# Alembic migrations (EXCEPT the 'migrations/' directory itself - keep it tracked)
+!migrations/
+migrations/versions/
+migrations/env.py
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Misc
+.DS_Store
+*.tmp
+
+# PROMPT-F78CD1-000083: .gitignore finalized — migrations/ is intentionally tracked

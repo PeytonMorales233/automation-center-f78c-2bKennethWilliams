@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "automation-center-f78c-2bKennethWilliams"
+version = "0.1.0"
+description = "A lightweight automation task platform based on FastAPI + SQLAlchemy with CRUD, search, config-driven setup, and CI/CD readiness."
+authors = [{name = "Kenneth Williams", email = "kenneth@example.com"}]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["fastapi", "sqlalchemy", "automation", "task", "crud"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Web Environment",
+  "Framework :: FastAPI",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+dependencies = [
+  "fastapi>=0.115.0",
+  "sqlalchemy>=2.0.36",
+  "uvicorn>=0.32.0",
+  "python-dotenv>=1.0.1",
+  "alembic>=1.13.0",
+  "pydantic>=2.9.0",
+]
+
+[project.optional-dependencies]
+# For future Celery/Redis extension (explicitly opt-in)
+async-extensions = ["celery>=5.4.0", "redis>=5.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/kenneth-williams/automation-center-f78c-2bKennethWilliams"
+Repository = "https://github.com/kenneth-williams/automation-center-f78c-2bKennethWilliams"
+Documentation = "https://github.com/kenneth-williams/automation-center-f78c-2bKennethWilliams#readme"
+
+[tool.ruff]
+# PEP 621-compatible linter config — minimal, readable, production-ready
+select = ["E", "F", "I", "UP", "PT"]
+ignore = ["E501", "F401"]
+line-length = 90
+src = ["."]
+
+[tool.ruff.per-file-ignores]
+"tests/**" = ["ALL"]
+"alembic/**" = ["ALL"]
+"migrations/**" = ["ALL"]
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.ruff.isort]
+profile = "black"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["*"]
