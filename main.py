@@ -19,7 +19,7 @@ async def lifespan(app: FastAPI):
 
     yield
 
-    # Shutdown
+    # Shutdown minor comment refresh
     try:
         await close_db()
     except Exception as e:
