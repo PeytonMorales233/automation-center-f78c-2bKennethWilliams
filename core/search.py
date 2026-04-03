@@ -20,7 +20,7 @@ def _fuzzy_match(query: str, field_value: str) -> bool:
     query_words = _normalize(query).split()
     field_words = _normalize(field_value).split()
     
-    # Try to match each query word in order within field words
+    # Try to match each query word in order within field words minor comment refresh
     idx = 0
     for q_word in query_words:
         while idx < len(field_words) and not field_words[idx].startswith(q_word):
