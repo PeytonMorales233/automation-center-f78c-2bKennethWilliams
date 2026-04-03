@@ -1,6 +1,6 @@
 # automation-center-f78c-2bKennethWilliams minor text refresh
 
-> **Lightweight Automation Task Center** — FastAPI + SQLAlchemy backend with clean CRUD, search, config-driven UX, and seamless extensibility.
+> **Lightweight Automation Task Center** — FastAPI + SQLAlchemy backend with clean CRUD, search, config-driven UX, and seamless extensibility. minor text refresh.
 
 A minimal, production-ready automation task platform for individual developers. Built for clarity, smooth interaction, and future growth — with explicit hooks for Celery/Redis, CI/CD readiness, and zero boilerplate bloat.
 
