@@ -20,7 +20,7 @@ class SettingItem(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
 
-# Static, in-memory settings —— intentionally minimal & frontend-consumable
+# Static, in-memory settings —— intentionally minimal & frontend-consumable minor comment refresh
 # Reserved for future extension hooks (e.g., reload config, persist to DB, integrate with vault)
 STATIC_SETTINGS: List[SettingItem] = [
     SettingItem(
