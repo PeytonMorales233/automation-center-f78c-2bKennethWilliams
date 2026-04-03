@@ -7,7 +7,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    # Core
+    # Core minor comment refresh
     APP_NAME: str = "Automation Center"
     APP_VERSION: str = "0.1.0"
     DEBUG: bool = False
